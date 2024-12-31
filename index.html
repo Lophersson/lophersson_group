@@ -1,194 +1,199 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lophersson Group</title>
-    <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
-    <style>
-        body {
-            background-color: #000;
-            color: #fff;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-            box-sizing: border-box;
-            max-width: 100vw;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lophersson Group</title>
+<link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
+    
+<style>
+    
+body {
+background-color: #000;
+color: #fff;
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+box-sizing: border-box;
+max-width: 100vw;
+}
 
-        header {
-            text-align: center;
-            padding: 20px 0;
-        }
+header {
+text-align: center;
+padding: 20px 0;
+}
 
-       h1 {
-            font-family: 'Source Sans Pro', sans-serif;
-           font-style: italic;
-            font-size: 2.5em; /* Ajusta el tamaño según necesites */
-            margin: 0;
-            color: #00ffff; /* Color del texto */
-            text-shadow: 
-                0 0 5px #00ffff, 
-                0 0 10px #00ffff, 
-                0 0 20px #00ffff, 
-                0 0 30px #0077ff, 
-                0 0 40px #0077ff, 
-                0 0 50px #0077ff, 
-                0 0 75px #0077ff; /* Efecto de brillo */
-        }
+h1 {
+font-family: 'Source Sans Pro', sans-serif;
+font-style: italic;
+font-size: 2.5em; /* Ajusta el tamaño según necesites */
+margin: 0;
+color: #00ffff; /* Color del texto */
+text-shadow: 
+0 0 5px #00ffff, 
+0 0 10px #00ffff, 
+0 0 20px #00ffff, 
+0 0 30px #0077ff, 
+0 0 40px #0077ff, 
+0 0 50px #0077ff, 
+0 0 75px #0077ff; /* Efecto de brillo */
+}
 
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 6px; /* Espaciado opcional */
-            width: 100%; /* O un ancho fijo */
-            padding: 6px;
-            max-width: 1200px;
-            margin: 0 auto;
-            background-color: #000;
-            align-items: center;
-            box-sizing: border-box;
-        }
+.grid {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+gap: 6px; /* Espaciado opcional */
+width: 100%; /* O un ancho fijo */
+padding: 6px;
+max-width: 1200px;
+margin: 0 auto;
+background-color: #000;
+align-items: center;
+box-sizing: border-box;
+}
 
-        .card {
-            background-color: #000;
-            border-radius: 15px;
-            overflow: hidden;
-            text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
+.card {
+background-color: #000;
+border-radius: 15px;
+overflow: hidden;
+text-align: center;
+transition: transform 0.3s, box-shadow 0.3s;
+}
 
-        .card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
-        }
+.card:hover {
+transform: scale(1.05);
+box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
 
-        .card img {
-            width: 100%;
-            height: auto;
-            border-radius: 15px;
-        }
+.card img {
+width: 100%;
+height: auto;
+border-radius: 15px;
+}
 
-        .card h3 {
-            margin: 4px 0;
-            font-size: 1.2em;
-            font-style: italic;
-        }
+.card h3 {
+margin: 4px 0;
+font-size: 1.2em;
+font-style: italic;
+}
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #111;
-            margin-top: 20px;
-        }
+footer {
+text-align: center;
+padding: 20px;
+background-color: #111;
+margin-top: 20px;
+}
 
-        footer p {
-            margin: 0;
-            font-size: 0.9em;
-        }
+footer p {
+margin: 0;
+font-size: 0.9em;
+}
 
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
+a {
+color: inherit;
+text-decoration: none;
+}
 
-        @media (max-width: 600px) {
-                .grid {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 6px; /* Espaciado opcional */
-            width: 100%; /* O un ancho fijo */
-            padding: 6px;
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #000;
-            align-items: center;
-            box-sizing: border-box;
-        }
+@media (max-width: 600px) {
+.grid {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+gap: 6px; /* Espaciado opcional */
+width: 100%; /* O un ancho fijo */
+padding: 6px;
+max-width: 600px;
+margin: 0 auto;
+background-color: #000;
+align-items: center;
+box-sizing: border-box;
+}
 
-        .card {
-            background-color: #000;
-            padding: 1px;
-        }
+.card {
+background-color: #000;
+padding: 1px;
+}
 
-        .card h3 {
-            font-style: italic;
-            font-size: 0.4em;
-        }
+.card h3 {
+font-style: italic;
+font-size: 0.4em;
+}
 
-    </style>
+</style>
+    
 </head>
+    
 <body>
-    <header>
-        <h1>Lophersson Group</h1>
-    </header>
+    
+<header>
+<h1>Lophersson Group</h1>
+</header>
 
-    <div class="grid">
-        <a href="https://lophersson.github.io/lophersson_group/release1.html" class="card">
-            <img src="https://raw.githubusercontent.com/Lophersson/images/refs/heads/main/Depayser.png" alt="Release 1">
-            <h3>Depayser</h3>
-        </a>
-        <a href="https://lophersson.github.io/lophersson_group/release2.html" class="card">
-            <img src="https://raw.githubusercontent.com/Lophersson/images/refs/heads/main/Copia%20de%20Sparkle.png" alt="Release 2">
-            <h3>Lophersson Consulting</h3>
-        </a>
-        <a href="https://lophersson.github.io/lophersson_group/release3.html" class="card">
-            <img src="https://github.com/Lophersson/lophersson_group/blob/main/_eleganz_241231.png?raw=true" alt="Release 3">
-            <h3>Eleganz</h3>
-        </a>
-        <a href="https://lophersson.github.io/lophersson_group/release4.html" class="card">
-            <img src="https://raw.githubusercontent.com/Lophersson/images/refs/heads/main/Wheaton%20Coffee%20Jazz.png" alt="Release 4">
-            <h3>Wheaton Coffee Jazz</h3>
-        </a>
-        <a href="https://lophersson.github.io/lophersson_group/release5.html" class="card">
-            <img src="https://github.com/Lophersson/lophersson_group/blob/main/_insigne_241231.png?raw=true" alt="Release 5">
-            <h3>INSIGNE</h3>
-        </a>
-        <a href="https://lophersson.github.io/lophersson_group/release6.html" class="card">
-            <img src="https://github.com/Lophersson/lophersson_group/blob/main/_virtuosity_241231.png?raw=true" alt="Release 6">
-            <h3>Virtuosity</h3>
-        </a>
-        <a href="https://lophersson.github.io/lophersson_group/release7.html" class="card">
-            <img src="https://raw.githubusercontent.com/Lophersson/images/refs/heads/main/Gr%C3%B6no_20241222_180946_0000.png" alt="Release 7">
-            <h3>Gröno</h3>
-        </a>
-        <a href="https://lophersson.github.io/lophersson_group/release8.html" class="card">
-            <img src="https://raw.githubusercontent.com/Lophersson/images/refs/heads/main/Coccolone.png" alt="Release 8">
-            <h3>Coccolone</h3>
-        </a>
-        <a href="https://lophersson.github.io/lophersson_group/release9.html" class="card">
-            <img src="https://github.com/Lophersson/images/blob/main/Logo%20Boutique%20de%20Ropa%20Moderno%20Rosa_20241228_174210_0000.png?raw=true" alt="Release 9">
-            <h3>La Petite Nouvelle</h3>
-        </a>
-        <a href="https://lophersson.github.io/lophersson_group/release10.html" class="card">
-            <img src="https://raw.githubusercontent.com/Lophersson/images/refs/heads/main/bluepirateship.png" alt="Release 10">
-            <h3>Blue Pirate Ship</h3>
-        </a>
-        <a href="https://lophersson.github.io/lophersson_group/release11.html" class="card">
-            <img src="https://github.com/Lophersson/lophersson_group/blob/main/_ursaeMajoris_241231.png?raw=true" alt="Release 5">
-            <h3>Ursae Majoris</h3>
-        </a>
-        <a href="https://lophersson.github.io/lophersson_group/release12.html" class="card">
-            <img src="https://github.com/Lophersson/images/blob/main/20241228_181006.png?raw=true" alt="Release 12">
-            <h3>Terra Mirai</h3>
-        </a>
-        <a href="https://lophersson.github.io/lophersson_group/release13.html" class="card">
-            <img src="https://github.com/Lophersson/images/blob/main/Minimalist%20House%20Line%20Real%20Estate%20Logo_20241228_171001_0000.png?raw=true" alt="Release 13">
-            <h3>Arvendium</h3>
-        </a>
-        <a href="https://lophersson.github.io/lophersson_group/release14.html" class="card">
-            <img src="https://github.com/Lophersson/lophersson_group/blob/main/_autoPlitz_241231.png?raw=true" alt="Release 14">
-            <h3>Auto Plitz</h3>
-        </a>
-        <a href="https://lophersson.github.io/lophersson_group/release15.html" class="card">
-            <img src="https://github.com/Lophersson/images/blob/main/399085646-0e29117e-db49-42b2-b438-d76fea8b4b2f.png?raw=true" alt="Release 15">
-            <h3>Bangalore Coffee</h3>
-        </a>
-    </div>
+<div class="grid">
+<a href="https://lophersson.github.io/lophersson_group/release1.html" class="card">
+<img src="https://raw.githubusercontent.com/Lophersson/images/refs/heads/main/Depayser.png" alt="Release 1">
+<h3>Depayser</h3>
+</a>
+<a href="https://lophersson.github.io/lophersson_group/release2.html" class="card">
+<img src="https://raw.githubusercontent.com/Lophersson/images/refs/heads/main/Copia%20de%20Sparkle.png" alt="Release 2">
+<h3>Lophersson Consulting</h3>
+</a>
+<a href="https://lophersson.github.io/lophersson_group/release3.html" class="card">
+<img src="https://github.com/Lophersson/lophersson_group/blob/main/_eleganz_241231.png?raw=true" alt="Release 3">
+<h3>Eleganz</h3>
+</a>
+<a href="https://lophersson.github.io/lophersson_group/release4.html" class="card">
+<img src="https://raw.githubusercontent.com/Lophersson/images/refs/heads/main/Wheaton%20Coffee%20Jazz.png" alt="Release 4">
+<h3>Wheaton Coffee Jazz</h3>
+</a>
+<a href="https://lophersson.github.io/lophersson_group/release5.html" class="card">
+<img src="https://github.com/Lophersson/lophersson_group/blob/main/_insigne_241231.png?raw=true" alt="Release 5">
+<h3>INSIGNE</h3>
+</a>
+<a href="https://lophersson.github.io/lophersson_group/release6.html" class="card">
+<img src="https://github.com/Lophersson/lophersson_group/blob/main/_virtuosity_241231.png?raw=true" alt="Release 6">
+<h3>Virtuosity</h3>
+</a>
+<a href="https://lophersson.github.io/lophersson_group/release7.html" class="card">
+<img src="https://raw.githubusercontent.com/Lophersson/images/refs/heads/main/Gr%C3%B6no_20241222_180946_0000.png" alt="Release 7">
+<h3>Gröno</h3>
+</a>
+<a href="https://lophersson.github.io/lophersson_group/release8.html" class="card">
+<img src="https://raw.githubusercontent.com/Lophersson/images/refs/heads/main/Coccolone.png" alt="Release 8">
+<h3>Coccolone</h3>
+</a>
+<a href="https://lophersson.github.io/lophersson_group/release9.html" class="card">
+<img src="https://github.com/Lophersson/images/blob/main/Logo%20Boutique%20de%20Ropa%20Moderno%20Rosa_20241228_174210_0000.png?raw=true" alt="Release 9">
+<h3>La Petite Nouvelle</h3>
+</a>
+<a href="https://lophersson.github.io/lophersson_group/release10.html" class="card">
+<img src="https://raw.githubusercontent.com/Lophersson/images/refs/heads/main/bluepirateship.png" alt="Release 10">
+<h3>Blue Pirate Ship</h3>
+</a>
+<a href="https://lophersson.github.io/lophersson_group/release11.html" class="card">
+<img src="https://github.com/Lophersson/lophersson_group/blob/main/_ursaeMajoris_241231.png?raw=true" alt="Release 5">
+<h3>Ursae Majoris</h3>
+</a>
+<a href="https://lophersson.github.io/lophersson_group/release12.html" class="card">
+<img src="https://github.com/Lophersson/images/blob/main/20241228_181006.png?raw=true" alt="Release 12">
+<h3>Terra Mirai</h3>
+</a>
+<a href="https://lophersson.github.io/lophersson_group/release13.html" class="card">
+<img src="https://github.com/Lophersson/images/blob/main/Minimalist%20House%20Line%20Real%20Estate%20Logo_20241228_171001_0000.png?raw=true" alt="Release 13">
+<h3>Arvendium</h3>
+</a>
+<a href="https://lophersson.github.io/lophersson_group/release14.html" class="card">
+<img src="https://github.com/Lophersson/lophersson_group/blob/main/_autoPlitz_241231.png?raw=true" alt="Release 14">
+<h3>Auto Plitz</h3>
+</a>
+<a href="https://lophersson.github.io/lophersson_group/release15.html" class="card">
+<img src="https://github.com/Lophersson/images/blob/main/399085646-0e29117e-db49-42b2-b438-d76fea8b4b2f.png?raw=true" alt="Release 15">
+<h3>Bangalore Coffee</h3>
+</a>
+</div>
 
-    <footer>
-        <p>&copy; 2024 Lophersson Group. All rights reserved.</p>
-    </footer>
+<footer>
+<p>&copy; 2024 Lophersson Group. All rights reserved.</p>
+</footer>
 </body>
 </html>
