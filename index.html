@@ -78,9 +78,16 @@
         }
 
         @media (max-width: 600px) {
-             .grid {
-            grid-template-columns: repeat(auto-fit, minmax(5, 1fr));
-            gap: 10px;
+                .grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px; /* Espaciado opcional */
+            width: 100%; /* O un ancho fijo */
+            padding: 10px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #000;
+            align-items: center;
         }
 
         .card {
