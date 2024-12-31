@@ -1,115 +1,325 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> - </title>
+    <title>Bangalore Coffee</title>
+    <link href="https://fonts.cdnfonts.com/css/tommy-font" rel="stylesheet">
     <style>
+        @import url('https://fonts.cdnfonts.com/css/tommy-font');
+        @import url('https://fonts.cdnfonts.com/css/mythologicals-one');
+
         body {
-            background-color: #000;
-            color: #d3d3d3;
-            font-family: Arial, sans-serif;
+            font-family: arial, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            background-color: #311432;
+            color: #333;
         }
 
         h1 {
-            margin-top: 20px;
+            background-color: #311432;
+            color: #fff;
             text-align: center;
+            padding: 0.5rem;
+            font-size: 4.6rem;
+            font-family: 'tommy font bold', sans-serif;
+            font-weight: normal;
+            margin: 0;
         }
 
-        .grid {
-            display: flex;
-            justify-content: center;
-            margin: 20px 0;
-        }
-
-        .card {
-            text-decoration: none;
-            color: inherit;
-            border: 0px solid #d3d3d3;
-            border-radius: 15px;
-            padding: 15px;
+        h3 {
+            font-family: 'MythologicalsOne', sans-serif;
+            background-color: #311432;
+            color: #fff;
             text-align: center;
-            transition: transform 0.2s, background-color 0.2s;
+            font-size: 5.1rem;
+            font-weight: normal;
+            margin: 0;
         }
 
-        .card:hover {
-            transform: scale(1.05);
-            background-color: #1a1a1a;
-        }
-
-        .card img {
-            max-width: 600px;
-            width: 100%;
-            height: auto;
-            border-radius: 15px;
-        }
-
-        .description {
-            max-width: 600px;
+        h4 {
+            background-color: #311432;
+            color: #fff;
             text-align: center;
-            margin: 20px auto;
+            padding: 0.5rem;
+            font-size: 2.3rem;
+            font-family: 'tommy font bold', sans-serif;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            margin-top: 0rem;
+            background: #311432;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .content {
+            padding: 2rem;
+            margin-top: 0rem;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            color: #DE73FF;
+            margin-top: 0rem;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        p {
             line-height: 1.6;
+            margin-bottom: 1rem;
+            font-style: italic;
+            color: #B47EDE;
         }
 
-        .button-container {
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        .button-container a {
-            display: inline-block;
-            text-decoration: none;
-            background-color: #d3d3d3;
-            color: #000;
-            padding: 10px 20px;
-            border-radius: 15px;
-            font-size: 16px;
+        .highlight {
+            color: #B47EDE;
             font-weight: bold;
-            transition: background-color 0.3s, color 0.3s;
         }
 
-        .button-container a:hover {
-            background-color: #fff;
-            color: #000;
+        header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #311432; /* Fondo oscuro para resaltar el blanco */
+  padding: 6px;
+}
+
+.imagen {
+  width: 150px;            /* Ajusta el ancho de la imagen */
+  height: auto;            /* Mantiene la proporción de la imagen */
+  margin-top: 6px;
+  margin-bottom: 12px;
+  filter: hue-rotate(330deg) brightness(0.8);
+  /*filter: hue-rotate(330deg) brightness(0.6);*/
+  /*filter: invert(1);*/
+}
+
+h6 {
+            background-color: #311432;
+            color: #fff;
+            text-align: center;
+            font-size: 1.1rem;
+            font-family: 'tommy font bold', sans-serif;
+            font-weight: normal;
+            margin: 0;
+            padding-bottom: 2rem;
         }
 
         footer {
             text-align: center;
-            margin-top: 20px;
-            padding: 10px 0;
-            border-top: 1px solid #d3d3d3;
+            padding: 1rem 0;
+            font-size: 0.9rem;
+            color: #E4A0F7;
+            background: #311432;
         }
 
-        footer p {
-            margin: 0;
-            font-size: 14px;
+        .cta {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .cta a {
+            text-decoration: none;
+            background: #B660CD;
+            color: #fff;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background 0.3s;
+            cursor: pointer;
+        }
+
+        .cta a:hover {
+            background: #A24EBA;
+        }
+
+        .image-banner {
+            height: 200px;
+            background: url('https://fotografias.lasexta.com/clipping/cmsimages02/2023/01/27/B8AFE522-1FDD-4D9C-B673-A8DA54F97071/calle-365-callejon-secreto-madrid_58.jpg?crop=1000,567,x0,y0&width=1000&height=567&optimize=high&format=webply') no-repeat center center/cover;
+        }
+
+        /* Nueva sección oculta */
+        .hidden {
+            display: none;
+        }
+
+        .visible {
+            display: block;
+        }
+
+        .menu-section {
+            padding: 2rem;
+            background-color: #431A46;
+            color: #fff;
+            border-radius: 8px;
+            margin: 2rem auto;
+        }
+
+        .menu-section h2 {
+            font-size: 1.5rem;
+            color: #E4A0F7;
+            text-align: center;
+        }
+
+        .menu-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu-section ul li {
+            font-size: 0.8rem;
+            margin: 0.5rem 0;
+            font-style: italic;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%; /* Ajusta el ancho según necesites */
+            max-width: 800px;
+            background-color: white;
+            margin: auto; /* Centra horizontalmente */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden; /* Para redondear esquinas */
+        }
+
+        thead th {
+            background-color: #0077ff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        tbody td {
+            padding: 10px;
+        }
+
+        tbody td:first-child {
+            text-align: left; /* Alinea la columna izquierda a la izquierda */
+        }
+
+        tbody td:last-child {
+            text-align: right; /* Alinea la columna derecha a la derecha */
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9; /* Color alterno para filas */
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        tbody tr:hover {
+            background-color: #e6f7ff; /* Resalta fila al pasar el mouse */
         }
     </style>
 </head>
 <body>
-    <h1> - </h1>
+    <header>
+        <h1>Bangalore Coffee</h1>
+        <img src="https://raw.githubusercontent.com/Lophersson/lophersson_group/4d8141c9e0d15a154bcb15e18a8a362377e8f380/ganesha.svg" alt="Descripción de la imagen" class="imagen" />
+        <h6>15570 Narón - A Coruña</h6>
+    </header>
 
-    <div class="grid">
-        <a href="https://lophersson.github.io/lophersson_group/release15.html" class="card">
-            <img src="_" alt="-">
-            <h3> - </h3>
-        </a>
+    <main>
+        <div class="image-banner"></div>
+        <div class="content" id="initial-content">
+            <h2>Un lugar acogedor en el corazón de Narón</h2>
+            <p>Ubicada estratégicamente cerca del centro comercial Odeón, <span class="highlight">Cafetería Bangalore</span> combina un ambiente cálido y moderno con un diseño que invita a la relajación y el disfrute.</p>
+            <p>Disfruta de nuestra amplia variedad de cafés de especialidad, tés exóticos y opciones frías como frappés y smoothies. También ofrecemos deliciosos desayunos, brunches y meriendas, con opciones <span class="highlight">veganas</span> y <span class="highlight">sin gluten</span>.</p>
+            <p>El espacio es perfecto para reuniones, pausas tranquilas o trabajar cómodamente con nuestro Wi-Fi gratuito. Aquí, el buen café y el servicio amable convergen para brindarte una experiencia única.</p>
+
+            <div class="cta">
+                <a onclick="toggleSection()">¡Ven a visitarnos!</a>
+            </div>
+        </div>
+
+        
+
+<div class="menu-section hidden" id="menu-section">
+    <div class="header-title">
+        <h4>Menú de Bebidas</h4>
     </div>
-
-    <p class="description"> - </p>
-
-    <div class="button-container">
+    <div class="container">
+        <h2>Precios en Euros</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Concepto</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Espresso</td><td>1,50 €</td></tr>
+                <tr><td>Cappuccino</td><td>2,50 €</td></tr>
+                <tr><td>Latte</td><td>2,70 €</td></tr>
+                <tr><td>Flat White</td><td>2,80 €</td></tr>
+                <tr><td>Macchiato</td><td>1,80 €</td></tr>
+                <tr><td>Café Vienés (con nata montada)</td><td>3,00 €</td></tr>
+                <tr><td>Cold Brew</td><td>3,20 €</td></tr>
+                <tr><td>Affogato (café con helado de vainilla)</td><td>3,50 €</td></tr>
+                <tr><td>Café Turco</td><td>2,90 €</td></tr>
+                <tr><td>Café Irlandés (con whisky y crema)</td><td>4,00 €</td></tr>
+                <tr><td>Café Bombón (con leche condensada)</td><td>2,50 €</td></tr>
+                <tr><td>Ristretto</td><td>1,50 €</td></tr>
+                <tr><td>Mochaccino (café con chocolate y leche)</td><td>3,00 €</td></tr>
+                <tr><td>Espresso Tonic (espresso con agua tónica)</td><td>3,20 €</td></tr>
+                <tr><td>Café con Leche de Avena</td><td>2,90 €</td></tr>
+                <tr><td>Té Verde</td><td>2,00 €</td></tr>
+                <tr><td>Té Negro</td><td>2,00 €</td></tr>
+                <tr><td>Té Chai Latte</td><td>3,00 €</td></tr>
+                <tr><td>Té Matcha Latte</td><td>3,50 €</td></tr>
+                <tr><td>Infusión de Manzanilla</td><td>1,80 €</td></tr>
+                <tr><td>Infusión de Frutos Rojos</td><td>2,20 €</td></tr>
+                <tr><td>Tisana Relax (hierbas relajantes)</td><td>2,50 €</td></tr>
+                <tr><td>Rooibos</td><td>2,20 €</td></tr>
+                <tr><td>Té Blanco con Jazmín</td><td>2,80 €</td></tr>
+                <tr><td>Infusión de Menta-Poleo</td><td>1,90 €</td></tr>
+                <tr><td>Té de Jengibre y Limón</td><td>2,50 €</td></tr>
+                <tr><td>Infusión Detox (hierbas desintoxicantes)</td><td>2,70 €</td></tr>
+                <tr><td>Té Oolong (té azul)</td><td>3,00 €</td></tr>
+            </tbody>
+        </table>
+        <div class="cta">
+            <a onclick="toggleSection()">Volver</a>
+        </div>
+        <div class="button-container">
         <a href="https://lophersson.github.io/lophersson_group/">Visita Lophersson Group</a>
     </div>
+</body>
+</html>
+    </div>
+</main>
 
     <footer>
-        <p>&copy; 2024 Eleganz. All rights reserved.</p>
+        © 2024 Cafetería Bangalore | Narón
     </footer>
+
+    <script>
+        function toggleSection() {
+            const initialContent = document.getElementById('initial-content');
+            const menuSection = document.getElementById('menu-section');
+
+            if (menuSection.classList.contains('hidden')) {
+                initialContent.classList.add('hidden');
+                menuSection.classList.remove('hidden');
+                window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza a la parte superior
+            } else {
+                initialContent.classList.remove('hidden');
+                menuSection.classList.add('hidden');
+                window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza a la parte superior
+            }
+        }
+    </script>
 </body>
 </html>
