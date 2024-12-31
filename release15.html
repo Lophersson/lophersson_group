@@ -205,14 +205,35 @@ h6 {
         }
 
         table {
+    width: 100%; /* Esto asegura que la tabla ocupe todo el ancho disponible */
+    border-collapse: collapse; /* Colapsa los bordes de las celdas */
+}
+
+th, td {
+    line-height: 1.6;          /* Ajusta la altura de la línea */
+    margin-bottom: 1rem;       /* Espaciado inferior */
+    font-style: italic;        /* Estilo de fuente en cursiva */
+    color: #B47EDE;            /* Color de texto morado */
+    padding: 8px;              /* Espaciado dentro de las celdas */
+    border: 1px solid #ddd;    /* Borde de las celdas */
+    text-align: center;        /* Centra el texto */
+}
+
+th {
+    background-color: #f4f4f4; /* Fondo gris claro para los encabezados */
+    font-weight: bold;         /* Hace el texto del encabezado en negrita */
+}
+
+
+        /*table {
             border-collapse: collapse;
-            width: 80%; /* Ajusta el ancho según necesites */
+            width: 80%; 
             max-width: 800px;
             background-color: white;
-            margin: auto; /* Centra horizontalmente */
+            margin: auto; 
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
-            overflow: hidden; /* Para redondear esquinas */
+            overflow: hidden; 
         }
 
         thead th {
@@ -227,15 +248,15 @@ h6 {
         }
 
         tbody td:first-child {
-            text-align: left; /* Alinea la columna izquierda a la izquierda */
+            text-align: left; 
         }
 
         tbody td:last-child {
-            text-align: right; /* Alinea la columna derecha a la derecha */
+            text-align: right; 
         }
 
         tbody tr:nth-child(even) {
-            background-color: #f9f9f9; /* Color alterno para filas */
+            background-color: #f9f9f9; 
         }
 
         tbody tr:nth-child(odd) {
@@ -243,8 +264,8 @@ h6 {
         }
 
         tbody tr:hover {
-            background-color: #e6f7ff; /* Resalta fila al pasar el mouse */
-        }
+            background-color: #e6f7ff; 
+        }*/
     </style>
 </head>
 <body>
