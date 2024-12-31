@@ -123,6 +123,29 @@ h6 {
         }
 
         .cta {
+    text-align: center;        /* Asegura que el contenido del contenedor esté centrado */
+    margin-top: 2rem;          /* Espaciado superior */
+    display: block;            /* Asegura que el enlace ocupe toda la línea */
+}
+
+.cta a {
+    text-decoration: none;     /* Elimina el subrayado */
+    background: #B660CD;       /* Fondo morado */
+    color: #fff;               /* Color del texto blanco */
+    padding: 0.8rem 1.5rem;    /* Espaciado dentro del enlace */
+    border-radius: 5px;        /* Bordes redondeados */
+    font-size: 1rem;           /* Tamaño del texto */
+    transition: background 0.3s; /* Efecto de transición al pasar el ratón */
+    cursor: pointer;          /* Cambia el cursor a pointer como si fuera un botón */
+    display: inline-block;     /* Cambia el display a inline-block para que se comporte como un botón */
+    text-align: center;        /* Asegura que el texto dentro del enlace esté centrado */
+}
+
+.cta a:hover {
+    background: #A24EBA;       /* Color de fondo al hacer hover (cuando el ratón pasa sobre el enlace) */
+}
+
+        /*.cta {
             text-align: center;
             margin-top: 2rem;
         }
@@ -140,7 +163,7 @@ h6 {
 
         .cta a:hover {
             background: #A24EBA;
-        }
+        }*/
 
         .image-banner {
             height: 200px;
