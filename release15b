@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangalore Coffee</title>
+    <link href="https://fonts.cdnfonts.com/css/tommy-font" rel="stylesheet">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/tommy-font');
+        @import url('https://fonts.cdnfonts.com/css/mythologicals-one');
+
+        body {
+            font-family: arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #311432;
+            color: #333;
+        }
+
+        h1 {
+            background-color: #311432;
+            color: #fff;
+            text-align: center;
+            padding: 0.5rem;
+            font-size: 4.6rem;
+            font-family: 'tommy font bold', sans-serif;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        h3 {
+            font-family: 'MythologicalsOne', sans-serif;
+            background-color: #311432;
+            color: #fff;
+            text-align: center;
+            font-size: 5.1rem;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        h4 {
+            background-color: #311432;
+            color: #fff;
+            text-align: center;
+            padding: 0.5rem;
+            font-size: 2.3rem;
+            font-family: 'tommy font bold', sans-serif;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            margin-top: 0rem;
+            background: #311432;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .content {
+            padding: 2rem;
+            margin-top: 0rem;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            color: #DE73FF;
+            margin-top: 0rem;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            font-style: italic;
+            color: #B47EDE;
+        }
+
+        .highlight {
+            color: #B47EDE;
+            font-weight: bold;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: #311432; 
+            padding: 6px;
+        }
+
+        .imagen {
+            width: 150px;            
+            height: auto;            
+            margin-top: 6px;
+            margin-bottom: 12px;
+            filter: hue-rotate(330deg) brightness(0.8);
+        }
+
+        h6 {
+            background-color: #311432;
+            color: #fff;
+            text-align: center;
+            font-size: 1.1rem;
+            font-family: 'tommy font bold', sans-serif;
+            font-weight: normal;
+            margin: 0;
+            padding-bottom: 2rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            font-size: 0.9rem;
+            color: #E4A0F7;
+            background: #311432;
+        }
+
+        .cta {
+            text-align: center;        
+            margin-top: 2rem;          
+            display: block;            
+        }
+
+        .cta a {
+            text-decoration: none;     
+            background: #B660CD;       
+            color: #fff;               
+            padding: 0.8rem 1.5rem;    
+            border-radius: 5px;        
+            font-size: 1rem;           
+            transition: background 0.3s;
+            cursor: pointer;          
+            display: inline-block;     
+            text-align: center;        
+        }
+
+        .cta a:hover {
+            background: #A24EBA;       
+        }
+
+        .image-banner {
+            height: 200px;
+            background: url('https://fotografias.lasexta.com/clipping/cmsimages02/2023/01/27/B8AFE522-1FDD-4D9C-B673-A8DA54F97071/calle-365-callejon-secreto-madrid_58.jpg?crop=1000,567,x0,y0&width=1000&height=567&optimize=high&format=webply') no-repeat center center/cover;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .visible {
+            display: block;
+        }
+
+        .menu-section {
+            padding: 2rem;
+            background-color: #431A46;
+            color: #fff;
+            border-radius: 8px;
+            margin: 2rem auto;
+        }
+
+        .menu-section h2 {
+            font-size: 1.5rem;
+            color: #E4A0F7;
+            text-align: center;
+        }
+
+        .menu-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu-section ul li {
+            font-size: 0.8rem;
+            margin: 0.5rem 0;
+            font-style: italic;
+        }
+
+        table {
+            width: 100%; 
+            border-collapse: collapse;
+        }
+
+        th, td {
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            font-style: italic;
+            font-size: 8px;
+            color: #B47EDE;
+            padding: 8px;
+            border: 0px solid #ddd;
+        }
+
+        th {
+            background-color: #f4f4f4; 
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bangalore Coffee</h1>
+        <img src="https://raw.githubusercontent.com/Lophersson/lophersson_group/4d8141c9e0d15a154bcb15e18a8a362377e8f380/ganesha.svg" alt="Descripción de la imagen" class="imagen" />
+        <h6>15570 Narón - A Coruña</h6>
+    </header>
+
+    <main>
+        <div class="image-banner"></div>
+        <div class="content" id="initial-content">
+            <h2>Un lugar acogedor en el corazón de Narón</h2>
+            <p>Ubicada estratégicamente cerca del centro comercial Odeón, <span class="highlight">Cafetería Bangalore</span> combina un ambiente cálido y moderno con un diseño que invita a la relajación y el disfrute.</p>
+            <p>Disfruta de nuestra amplia variedad de cafés de especialidad, tés exóticos y opciones frías como frappés y smoothies. También ofrecemos deliciosos desayunos, brunches y meriendas, con opciones <span class="highlight">veganas</span> y <span class="highlight">sin gluten</span>.</p>
+            <p>El espacio es perfecto para reuniones, pausas tranquilas o trabajar cómodamente con nuestro Wi-Fi gratuito. Aquí, el buen café y el servicio amable convergen para brindarte una experiencia única.</p>
+
+            <div class="cta">
+                <a onclick="toggleSection()">¡Ven a visitarnos!</a>
+            </div>
+        </div>
+
+        <!-- Nuevo Header para el Menú de Bebidas -->
+        <div class="menu-section hidden" id="menu-section">
+            <div class="header-title">
+                <h4>Menú de Bebidas</h4>
+            </div>
+            <div class="container">
+                <h2>Precios en Euros</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Concepto</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Espresso</td><td>1,50 €</td></tr>
+                        <tr><td>Cappuccino</td><td>2,50 €</td></tr>
+                        <tr><td>Latte</td><td>2,70 €</td></tr>
+                        <tr><td>Flat White</td><td>2,80 €</td></tr>
+                        <tr><td>Macchiato</td><td>1,80 €</td></tr>
+                        <tr><td>Café Vienés (con nata montada)</td><td>3,00 €</td></tr>
+                        <tr><td>Cold Brew</td><td>3,20 €</td></tr>
+                        <tr><td>Affogato (café con helado de vainilla)</td><td>3,50 €</td></tr>
+                        <tr><td>Café Turco</td><td>2,90 €</td></tr>
+                        <tr><td>Café Irlandés (con whisky y crema)</td><td>4,00 €</td></tr>
+                        <tr><td>Café Bombón (con leche condensada)</td><td>2,50 €</td></tr>
+                        <tr><td>Ristretto</td><td>1,50 €</td></tr>
+                        <tr><td>Mochaccino (café con chocolate y leche)</td><td>3,00 €</td></tr>
+                        <tr><td>Espresso Tonic (espresso con agua tónica)</td><td>3,20 €</td></tr>
+                        <tr><td>Café con Leche de Avena</td><td>2,90 €</td></tr>
+                        <tr><td>Té Verde</td><td>2,00 €</td></tr>
+                        <tr><td>Té Negro</td><td>2,00 €</td></tr>
+                        <tr><td>Té Chai Latte</td><td>3,00 €</td></tr>
+                        <tr><td>Té Matcha Latte</td><td>3,50 €</td></tr>
+                        <tr><td>Frappuccino</td><td>3,50 €</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Bangalore Coffee. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleSection() {
+            var section = document.getElementById('menu-section');
+            if (section.classList.contains('hidden')) {
+                section.classList.remove('hidden');
+                section.classList.add('visible');
+            } else {
+                section.classList.remove('visible');
+                section.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
