@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>miBanco</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 90vh;
+            background-color: #000000; /* Fondo negro */
+            color: #26619c; /* Texto en azul lapislázuli */
+        }
+        .header-title {
+            width: 96%;
+            text-align: center;
+            margin-top: 8px;
+            margin-bottom: 4px;
+            padding: 4px;
+            background-color: #1b263b; /* Azul oscuro apagado */
+            border-radius: 8px;
+        }
+        .header-title h1 {
+            margin: 0;
+            color: #66a2de; /* Azulado para el título */
+            font-weight: bold;
+            font-style: italic;
+            font-size: 18px;
+            padding-top: 4px;
+            margin-top: 4px;
+        }
+        .container {
+            width: 98%;
+            max-width: 480px;
+            background-color: #2e4057; /* Azul clásico apagado */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            box-sizing: border-box;
+            align-items: center;
+            text-align: center;
+            align-content: center;
+        }
+        h2 {
+            text-align: center;
+            color: #66a2de; /* Azul lapislázuli */
+            font-weight: bold;
+            font-style: italic;
+            font-size: 18px;
+            padding: 1px;
+            margin: 2px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+        th, td {
+            border: 0px solid #ddd;
+            padding: 2px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: italic;
+            font-size: 10px;
+        }
+        th {
+            background-color: #1b263b; /* Cabecera de campos: Azul oscuro apagado */
+            color: #949494; /* Texto cabecera: Blanco grisáceo */
+            text-align: center;
+        }
+        td {
+            text-align: right;
+            color: #66a2de; /* Importes en azulado */
+        }
+        td:first-child {
+            text-align: left;
+            color: #66a2de; /* Texto de conceptos en azul lapislázuli */
+        }
+        tr:nth-child(even) {
+            background-color: #3e536b; /* Filas pares: Azul apagado intermedio */
+        }
+        .total-row {
+            font-weight: bold;
+            background-color: #1b263b; /* Total: Azul oscuro apagado */
+            margin-top: 8px;
+        }
+        .total-row td {
+            font-weight: bold;
+            background-color: #1b263b;
+            color: #949494; /* Texto del total en grisáceo */
+            border-radius: 8px;
+            margin-top: 8px;
+        }
+        .custom-link {
+            text-align: left;
+            color: #66a2de;
+            text-decoration: none;
+        }
+        /* Nueva clase para texto en naranja */
+        .highlight-orange {
+            color: orange;
+        }
+        /* Nueva clase para texto en naranja */
+         .highlight-white {
+            color: white;
+        }
+  
+  td.highlight-orange {
+    color: orange !important; /* Fuerza el color naranja en los conceptos */
+}
+  
+  td.highlight-orange a {
+    color: orange !important; /* Fuerza el color naranja en los enlaces dentro del concepto */
+    text-decoration: none; /* Elimina el subrayado si no lo deseas */
+}
+    
+    td.highlight-white{
+    color: white !important; /* Fuerza el color verde en los conceptos */
+}
+  
+td.highlight-white a {
+    color: white !important; /* Fuerza el color verde en los enlaces dentro del concepto */
+    text-decoration: none; /* Elimina el subrayado si no lo deseas */
+}
+    </style>
+</head>
+<body>
+
+<div class="header-title">
+<h1>Presupuestos</h1>
+</div>
+    
+<div class="container">
+<h2>31 de Diciembre de 2024 - 17:08</h2>
+        
+<table id="tabla-calculos">
+    
+<thead>
+<tr>
+<th>Concepto</th>
+<th>A Pagar</th>
+</tr>
+    
+</thead>
+<tbody>
+    
+<tr>
+<td>ahorros</td>
+<td>300,00 €</td>
+</tr>
+    
+<tr>
+<td>entregas ene25 a abr25 800e</td>
+<td>740,00 €</td>
+</tr>
+    
+<tr>
+<td>libro La Recivilización Casa del Libro 19,85e</td>
+<td>0,00 €</td>
+</tr>
+    
+<tr>
+<td><a href="https://www.jackjones.com/es-es/product/12166852_3561/vaqueros-corte-skinny-tiro-bajo?_gl=1%2a1nxta99%2a_up%2aMQ..%2a_ga%2aMTYyODc0ODA5Ni4xNzI5NDU3MTk4%2a_ga_B0LPBSYH2P%2aMTcyOTQ1NzE5Ny4xLjAuMTcyOTQ1NzE5OC4wLjAuMA..%2a_ga_Y1XQCDR0LH%2aMTcyOTQ1NzE5Ny4xLjAuMTcyOTQ1NzE5OC4wLjAuMA.."class="custom-link" target="_blank">
+jack & jones liam x2 ENERO 2025</td>
+<td>60,00 €</td>
+</tr>
+    
+<tr>
+<td>Gasoil 30-dic-2024</td>
+<td>40,00 €</td>
+</tr>
+    
+<tr>
+<td>estor ikea opaca azul 200x195 Fridans 40e Febrero 2025</td>
+<td>40,00 €</td>
+</tr>
+    
+<tr>
+<td>watch6 37e - ene2025</td>
+<td>0,00 €</td>
+</tr>
+    
+<tr>
+<td>rituals black 7,50e Febrero 2025</td>
+<td>10,00 €</td>
+</tr>
+    
+<tr>
+<td>gasoil 49,37e ene2025</td>
+<td>0,00 €</td>
+</tr>
+    
+<tr>
+<td>residual</td>
+<td>0,61 €</td>
+</tr>
+    
+<tr>
+<td>espejo lönsås 21x30 ikea Febrero 2025</td>
+<td>1,49 €</td>
+</tr>
+    
+<tr>
+<td>marco de espejo yllevad 21x30 ikea Febrero 2025</td>
+<td>1,49 €</td>
+</tr>
+    
+<tr>
+<td>cafeterías, parking y supermercado</td>
+<td>1,58 €</td>
+</tr>
+    
+<tr>
+<td>supercor 9 diciembre 2024; 5,24e - 4,77e. Febrero 2025</td>
+<td>0,47 €</td>
+</tr>
+    
+<tr>
+<td><a href="https://www.nike.com/es/t/killshot-2-leather-zapatillas-QfHfKW/HF4861-133?cp=53758079285_soc_&pp=0&epik=dj0yJnU9VU5MeHlVTmFVU2ZVcWNLaFk1WDlReDdwN0RyYXlpa20mcD0xJm49UlV0VXl0NzI3emhLZVR3N1dXUWFDQSZ0PUFBQUFBR2JOZktV" class="custom-link" target="_blank">nike killshot 2 bl/arena/verde 76e Marzo 2025</td>
+<td>76,00 €</td>
+</tr>
+    
+<tr>
+<td>cazadora naútica fina roja - 60e FEBRERO 2025</td>
+<td>60,00 €</td>
+</tr>
+    
+<tr>
+<td>camisas oxford x2 md 48,00 € Febrero 2025</td>
+<td>48,00 €</td>
+</tr>
+    
+<tr>
+<td>grill tefal el corte inglés. 60,90e ene2025</td>
+<td>0,00 €</td>
+</tr>
+    
+<tr>
+<td>tres camisetas manga corta lefties - 12e</td>
+<td>0,00 €</td>
+</tr>
+    
+<tr>
+<td>bermudas beige clarito/tostado - 20e</td>
+<td>18,00 €</td>
+</tr>
+    
+<tr>
+<td>chino beige skinny lefties</td>
+<td>18,00 €</td>
+</tr>
+    
+<tr>
+<td>cargo beige tobillos fruncidos</td>
+<td>16,00 €</td>
+</tr>
+    
+<tr>
+<td>polo navy</td>
+<td>16,00 €</td>
+</tr>
+    
+<tr>
+<td>polo blanco</td>
+<td>16,00 €</td>
+</tr>
+    
+<tr>
+<td>bóxers pepe jeans pack 3uds - 27e</td>
+<td>0,00 €</td>
+</tr>
+    
+<tr>
+<td>abrigo paño camel Kiabi - 50e</td>
+<td>50,00 €</td>
+</tr>
+    
+<tr>
+<td>bufanda punto camel LFT - 9,99e</td>
+<td>7,49 €</td>
+</tr>
+    
+<tr>
+<td>sudadera básica topo LFT - 7,99e</td>
+<td>5,99 €</td>
+</tr>
+    
+<tr>
+<td>camiseta básica mlarga blanca LFT - 5,99e</td>
+<td>4,49 €</td>
+</tr>
+    
+</tbody>
+</table>
+    
+<table>
+<tbody>
+<tr class="total-row">
+<td>Total</td>
+<td id="total-a-pagar"></td>
+</tr>
+</tbody>
+</table>
+    
+</div>
+    
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const rows = document.querySelectorAll('#tabla-calculos tbody tr:not(.total-row)');
+        let total = 0;
+
+        rows.forEach(row => {
+            const amountCell = row.cells[1];
+            const conceptCell = row.cells[0];
+
+            // Verifica si el concepto contiene la palabra ENERO
+            if (conceptCell.textContent.includes('ENERO')) {
+                conceptCell.classList.add('highlight-orange'); // Aplica el color naranja al concepto
+                amountCell.classList.add('highlight-orange');  // Aplica el color naranja al importe
+            }
+            
+            // Verifica si el concepto contiene la palabra Lefties
+            if (conceptCell.textContent.includes('Lefties')) {
+                conceptCell.classList.add('highlight-white'); // Aplica el color verde al concepto
+                amountCell.classList.add('highlight-white');  // Aplica el color verde al importe
+            }
+
+            if (amountCell) {
+                const amountText = amountCell.textContent.trim();
+                const amount = parseFloat(amountText.replace(' €', '').replace(',', '.'));
+                if (!isNaN(amount)) {
+                    total += amount;
+                }
+            }
+        });
+
+        document.getElementById('total-a-pagar').textContent = `${total.toFixed(2).replace('.', ',')} €`;
+
+        ordenarPorImporte(); // Llama a la función de ordenamiento automáticamente al cargar
+    });
+
+    function ordenarPorImporte() {
+        const tbody = document.querySelector('#tabla-calculos tbody');
+        const rowsArray = Array.from(tbody.querySelectorAll('tr:not(.total-row)'));
+
+        rowsArray.sort((a, b) => {
+            const importeA = parseFloat(a.cells[1].textContent.replace(' €', '').replace(',', '.')) || 0;
+            const importeB = parseFloat(b.cells[1].textContent.replace(' €', '').replace(',', '.')) || 0;
+            return importeB - importeA; // Orden descendente
+        });
+
+        rowsArray.forEach(row => tbody.appendChild(row));
+    }
+</script>
+            
+</body>
+</html>
