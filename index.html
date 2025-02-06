@@ -40,6 +40,52 @@ text-shadow:
 0 0 75px #0077ff; /* Efecto de brillo */
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: blink 1.5s infinite;
+}
+
+button:hover {
+    transform: scale(1.1);
+    border-color: blue; /* El color del borde cambiará según el hover */
+}
+
+button:nth-child(1):hover {
+    border-color: blue;
+}
+
+button:nth-child(2):hover {
+    border-color: yellow;
+}
+
+button:nth-child(3):hover {
+    border-color: red;
+}
+
+button:nth-child(4):hover {
+    border-color: purple;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
 .grid {
 display: grid;
 grid-template-columns: repeat(5, 1fr);
@@ -128,6 +174,21 @@ font-size: 0.4em;
 <header>
 <h1>Lophersson Group</h1>
 </header>
+
+<div class="button-container">
+    <a href="https://lophersson.github.io/OmniWeb/" target="_blank">
+        <button>La web de Humberto</button>
+    </a>
+    <a href="https://lophersson.github.io/OmniWeb/web1.html" target="_blank">
+        <button>Menú Semanal Baja Acidez</button>
+    </a>
+    <a href="https://lophersson.github.io/OmniWeb/" target="_blank">
+        <button>Web3 en construcción</button>
+    </a>
+    <a href="https://lophersson.github.io/OmniWeb/" target="_blank">
+        <button>Web4 en construcción</button>
+    </a>
+</div>
 
 <div class="grid">
 <a href="https://lophersson.github.io/lophersson_group/release1.html" class="card">
